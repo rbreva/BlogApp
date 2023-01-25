@@ -165,7 +165,7 @@ I would like to thank Microverse.
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](https://github.com/rbreva/BlogApp/edit/BlogAppControllersSpecs/MIT.md) licensed.
+This project is [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt) licensed.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
