@@ -5,13 +5,13 @@ RSpec.describe UsersController, type: :request do
     get users_path
     expect(response).to render_template(:index)
     expect(response).to have_http_status(200)
-    expect(response.body).to include('User Number One')
+    expect(response.body).to include('All the Users page')
   end
 
   it 'Expect a response code 200 and render from the view show' do
     get '/users/1'
     expect(response).to render_template(:show)
     expect(response).to have_http_status(200)
-    expect(response.body).to include('BIO')
+    expect(response.body).to include('Especific User page')
   end
 end
