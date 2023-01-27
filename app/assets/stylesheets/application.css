@@ -108,6 +108,15 @@ body {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  font-size: 1.2rem;
+}
+
+.user_posts .comments_list{
+  width: 100%;
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
 }
 
 .btns{
