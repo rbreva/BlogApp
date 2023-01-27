@@ -14,9 +14,9 @@
  *= require_self
  */
 
- @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
- html {
+html {
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Roboto', sans-serif;
@@ -104,14 +104,14 @@ body {
   padding-bottom: 3rem;
 }
 
-.user_post .user_comments_num{
+.user_post .user_comments_num {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
   font-size: 1.2rem;
 }
 
-.comments_list{
+.comments_list {
   width: 100%;
   border: 1px solid #000;
   padding: 1rem;
@@ -119,15 +119,15 @@ body {
   font-size: 1.2rem;
 }
 
-.btns{
-  display:flex;
+.btns {
+  display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   gap: 1rem;
 }
 
-.btns button{
+.btns button {
   background: #fff;
   padding: 0.5rem 1rem;
   border: 1px solid #000;
@@ -154,4 +154,3 @@ body {
 .post .post_content .post_content_head .post_title {
   font-size: 1.6rem;
 }
-
