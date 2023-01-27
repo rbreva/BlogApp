@@ -111,7 +111,7 @@ body {
   font-size: 1.2rem;
 }
 
-.user_posts .comments_list{
+.comments_list{
   width: 100%;
   border: 1px solid #000;
   padding: 1rem;
@@ -133,3 +133,25 @@ body {
   border: 1px solid #000;
   border-radius: 0.5rem;
 }
+
+.post {
+  width: 100%;
+}
+
+.post .post_content {
+  border: 1px solid #000;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.post .post_content .post_content_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.post .post_content .post_content_head .post_title {
+  font-size: 1.6rem;
+}
+

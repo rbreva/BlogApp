@@ -1,1 +1,24 @@
-<div>Especific Post page</div>
+<section class="users_section">
+  <div class="post">
+    <div class="post_content">
+      <div class="post_content_head">
+        <% user = User.find(@post.author_id) %>
+        <h2 class="post_title"><%= @post.title %> by <%= user.name %></h2>
+        <div class="post_comments_count">Comments: <%=@post.comments_counter%>, Likes: <%=@post.likes_counter%></div>
+      </div>
+      <p><%=@post.text%></p>
+    </div>
+    <ul class="comments_list">
+      <% @comments.each do |comment| %>
+        <% usercom = User.find(comment.author_id) %>
+        <li><%= link_to user_path(usercom) do %><%=usercom.name%><% end %>: <%=comment.text%></li>
+      <% end %>
+    </ul>
+    </div>
+  </div>
+  <div class="btns">
+    <button>
+      <%= link_to 'Back to ' +user.name + '´s Posts', user_posts_path(user) %>
+    </button>
+  </div>
+</section>
