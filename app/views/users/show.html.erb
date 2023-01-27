@@ -1,1 +1,30 @@
-<div>Especific User page</div>
+<section class="users_section">
+  <div class="user_card">
+    <img src="<%=@user.photo%>" alt="<%=@user.name%>'s photo"/>
+    <div class="user_data">
+      <h2><%=@user.name%></h2>
+      <div class="user_posts_num">Number of posts: <%=@user.post_counter%></div>
+    </div>
+  </div>
+  <div class="user_bio">
+    <h3>Bio</h3>
+    <p><%=@user.bio%></p>
+  </div>
+  <div class="user_posts">
+    <% @user.recent_posts.each_with_index do |post, i| %>
+      <div class="user_post">
+        <h3><%= post.title %></h3>
+        <p><%= post.text %></p>
+      <div class="user_comments_num">Comments: <%= post.comments_counter %>, Likes: <%= post.likes_counter %></div>
+    </div>
+    <% end %>
+  </div>
+  <div class="btns">
+    <button>
+      <%= link_to 'Back to all Users', users_path()%>
+    </button>
+    <button>
+      <%= link_to 'See all ' + @user.name + '´s posts', user_posts_path(@user)%>
+    </button>
+  </div>
+</section>

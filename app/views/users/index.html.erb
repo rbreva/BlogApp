@@ -1,1 +1,13 @@
-<div>All the Users page</div>
+<section class="users_section">
+  <% @users.each do |user| %>
+    <%= link_to user_path(user) do %>
+      <div class="user_card">
+        <img src="<%=user.photo%>" alt="<%=user.name%>'s photo"/>
+        <div class="user_data">
+          <h2><%=user.name%></h2>
+          <div class="user_posts_num">Number of posts: <%=user.post_counter%></div>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+</section>

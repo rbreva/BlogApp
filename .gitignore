@@ -32,3 +32,5 @@
 
 #.env
 #squema.txt
+
+node_modules/
