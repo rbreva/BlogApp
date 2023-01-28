@@ -21,4 +21,7 @@
       <%= link_to 'Back to ' +user.name + '´s Posts', user_posts_path(user) %>
     </button>
   </div>
+  <%= render 'shared/like' %>
+  <%= render 'shared/comment' %>
+
 </section>
