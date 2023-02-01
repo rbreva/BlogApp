@@ -121,6 +121,13 @@ rails server
 - Twitter: [@rbreva75](https://twitter.com/rbreva75)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/r-mauricio-mendoza-huerta/)
 
+👤 **Didier Ganthier**
+
+- GitHub: [@didierganthier](https://github.com/didierganthier)
+- Twitter: [@didierganthier_](https://twitter.com/didierganthier_)
+- LinkedIn: [Didier Peran Ganthier](https://linkedin.com/in/didierganthier)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>

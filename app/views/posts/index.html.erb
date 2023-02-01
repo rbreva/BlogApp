@@ -8,7 +8,7 @@
   </div>
 
   <div class="user_posts">
-    <% @user.recent_posts.each_with_index do |post, i| %>
+    <% @user.posts.includes([:comments]).each do |post| %>
     <%= link_to user_post_url(id: post.id) do %>
       <div class="user_post">
         <h3><%= post.title %></h3>
