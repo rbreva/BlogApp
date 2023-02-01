@@ -60,5 +60,24 @@ RSpec.describe 'Users', type: :system, js: true do
       expect(page).to have_content(@second_post.title)
       expect(page).to have_content(@third_post.title)
     end
+
+    it 'I can see a button that lets me view all of a users posts.' do
+      visit user_path(@user.posts.first.author_id)
+      expect(page).to have_content('See all Didier´s posts')
+    end
+
+    it 'When I click a users post, it redirects me to that posts show page.' do
+      visit user_posts_path(@user)
+      post_id = Post.last.id
+      post_author = Post.last.author_id
+      click_link @user.posts.last.text
+      expect(page).to have_current_path(user_post_path(post_author, post_id))
+    end
+
+    it 'When I click to see all posts, it redirects me to the users posts index page.' do
+      visit user_posts_path(@user)
+      click_link 'Back to User'
+      expect(page).to have_current_path(user_posts_path(@user.posts.first.author_id))
+    end
   end
 end

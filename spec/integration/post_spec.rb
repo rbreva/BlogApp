@@ -63,6 +63,11 @@ RSpec.describe 'Posts', type: :system, js: true do
       expect(page).to have_content(@third_post.likes_counter)
     end
 
+    it 'I can see a section for pagination if there are more posts than fit on the view.' do
+      visit user_posts_path(@user.posts.first.author_id)
+      expect(page).to have_content('Pagination')
+    end
+
     it "redirects to a specific post's show page" do
       click_link @second_post.title
       expect(page).to have_current_path(user_post_path(@user, @second_post))
