@@ -133,6 +133,7 @@ rails server
 ## 🔭 Future Features <a name="future-features"></a>
 
 - [ ] **Add style and improve UX**
+- [ ] **Follow**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
