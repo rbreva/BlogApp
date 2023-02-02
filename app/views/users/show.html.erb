@@ -27,5 +27,7 @@
       <%= link_to 'See all ' + @user.name + '´s posts', user_posts_path(@user)%>
     </button>
     <button><%=link_to "New Post", new_post_path %></button>
+    <button><%= link_to "Sign out", destroy_user_session_path, data: { turbo_method: :delete } %></button>
+    <button><%= link_to "Edit Password", edit_user_registration_path %></button>
   </div>
 </section>
